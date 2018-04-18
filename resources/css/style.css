@@ -3,8 +3,19 @@ html{
 }
 
 body {
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(72,72,72);
   margin: 0;
   padding: 0;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -14,6 +25,7 @@ header{
   align-items: center;
   background-color: white;
   width: 100%;
+  z-index: 10;
 }
 
 ul{
@@ -30,6 +42,8 @@ ul li{
 
 img.logo{
   margin-left: 1.5rem;
+  height: 3rem;
+  width: auto;
 }
 
 div.menu{
@@ -37,8 +51,12 @@ div.menu{
   align-items: center;
 }
 
+#academycolor{
+  color: rgb(211,211,211);
+}
+
 .banner{
-  background-color: grey
+  background-color: rgb(220,220,220);
 }
 
 div.banner{
@@ -50,10 +68,11 @@ div.banner{
 div.bannerimage{
   width: 60%;
   padding: 2rem 1.5rem 2rem 1.5rem;
-  border: solid blue 1px;
 }
+
 div.banner-menu{
   padding: 16px;
+  width: 60%;
 }
 
 .bannerright{
@@ -67,7 +86,7 @@ div.banner-menu{
 }
 
 .banner-button{
-  background-color: green;
+  background-color: rgb(72,72,72);
   border: none;
   color: white;
   padding: 16px 0;
@@ -87,24 +106,32 @@ div.banner-menu{
   flex-direction: column;
   width: 40%;
   padding-top: 1rem;
-  border-left: solid grey 1px;
+  margin-bottom: 2rem;
 }
 
 div.infoleft{
   width: 60%;
-  border: solid blue 1px;
   padding: 2rem 1.5rem 2rem 1.5rem;
+  border-right: solid rgb(220,220,220) 1px;
 }
 
 .infoimage{
   display: flex;
-  border-bottom: double grey 1px;
+  border-bottom: double rgb(220,220,220) 1px;
 }
 
 .infotext{
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
+}
+
+a{
+    padding-top: 1rem;
+}
+
+.information h5{
+  padding-top: 2.5rem;
 }
 
 .main-infoimage{
@@ -121,12 +148,16 @@ div.infoleft{
   padding: 1rem 2rem 1rem 1rem;
 }
 
+#greybackground{
+  background-color: rgb(220,220,220);
+}
+
 .learning{
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 100%;
-  background-color: grey;
+  background-color: rgb(220,220,220);
 }
 
 .courses{
@@ -159,9 +190,12 @@ div.thesis-exibit{
   width: 100%;
 }
 
+.thesisimage{
+    display: flex;
+}
+
 .thesisleft{
   width: 60%;
-  border: solid blue 1px;
   padding: 0rem 1.5rem 2rem 1.5rem;
 }
 
@@ -169,11 +203,10 @@ div.thesis-exibit{
   display: flex;
   flex-direction: column;
   width: 40%;
-  border-left: solid grey 1px;
 }
 
 .imginfo4{
-  padding: 0rem 2rem 1rem 1rem;
+  padding: 1rem 2rem 1rem 1rem;
 }
 
 footer{
@@ -183,6 +216,7 @@ footer{
   align-items: center;
   background-color: white;
   width: 100%;
+  border-top: double rgb(220,220,220) 1px;
 }
 
 div.left{
