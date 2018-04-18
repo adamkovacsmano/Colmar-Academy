@@ -25,7 +25,9 @@ header{
   align-items: center;
   background-color: white;
   width: 100%;
-  z-index: 10;
+  z-index: 1;
+  position: fixed;
+  margin-top: -64px;
 }
 
 ul{
@@ -38,6 +40,13 @@ ul{
 
 ul li{
   margin-right: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all ease-in-out 500ms;
+}
+
+ul li:hover{
+  border-color: rgb(72,72,72);
 }
 
 img.logo{
@@ -57,6 +66,7 @@ div.menu{
 
 .banner{
   background-color: rgb(220,220,220);
+  margin-top: 64px;
 }
 
 div.banner{
@@ -95,6 +105,13 @@ div.banner-menu{
   display: inline-block;
   font-size: 1rem;
   width: 100%;
+  transition-property: background-color;
+  transition-duration: 750ms;
+  transition-delay: 100ms;
+}
+
+.banner-button:hover{
+  background-color: rgb(144,144,144);
 }
 
 .information{
@@ -128,6 +145,11 @@ div.infoleft{
 
 a{
     padding-top: 1rem;
+}
+
+li a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .information h5{
@@ -174,6 +196,13 @@ a{
   text-align: left;
   margin-bottom: 2rem;
   width: 33.25rem;
+}
+
+.course:hover{
+  transition-duration: 500ms;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
 }
 
 .course-text{
