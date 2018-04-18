@@ -251,3 +251,132 @@ footer{
 div.left{
   padding-left: 1rem;
 }
+
+/* Mobile section*/
+
+.mobile-menu{
+  display: none;
+}
+
+.mobile-courses{
+  display: none;
+}
+
+.mobilinfo{
+  display: none;
+}
+
+@media only screen and (max-width: 480px){
+  header .mobile-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 1.5rem;
+  }
+  header ul,
+  header .menu,
+  div.information,
+  div.courses,
+  div.thesisright{
+  display: none;
+  }
+
+  .banner{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+  }
+
+  div.bannerimage{
+    width: 100%;
+    padding: 0;
+  }
+
+  div.banner-menu{
+      width: 100%;
+      padding: 0;
+      text-align: center;
+  }
+
+  div.bannerright{
+      width: 100%;
+  }
+
+  .mobilinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
+  }
+
+  .mobilimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.mobilimg{
+      padding-bottom: 32px;
+  }
+
+  div.mobilinfotext{
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mobile-courses{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  .learning{
+    background-color: white;
+  }
+
+  .mobile-button{
+    background-color: rgb(144,144,144);
+    border: none;
+    color: white;
+    padding: 16px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.7rem;
+    width: 100%;
+    transition-property: background-color;
+    transition-duration: 750ms;
+    transition-delay: 100ms;
+    margin-bottom: 0.5rem;
+  }
+
+  .mobile-button:hover{
+    background-color: rgb(72,72,72);
+  }
+
+  div.thesisleft{
+    width: 100%;
+    padding: 0;
+  }
+  #notxt{
+    display: none;
+  }
+  footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-top: none;
+  }
+
+  h1{
+    font-size: 1.5rem;
+  }
+
+  h2{
+    font-size: 1rem;
+  }
+
+}
