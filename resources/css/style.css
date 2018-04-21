@@ -168,6 +168,13 @@ li a{
 .imginfo3,
 .imginfo5{
   padding: 1rem 2rem 1rem 1rem;
+  height: 35%;
+  width: 35%;
+}
+
+.imginfo4{
+  height: 35%;
+  width: 35%;
 }
 
 #greybackground{
@@ -379,4 +386,52 @@ div.left{
     font-size: 1rem;
   }
 
+}
+
+@media only screen and (max-width: 1224px){
+
+  div.courses{
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (max-width: 980px) and (min-width: 480px){
+
+  .banner{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+  }
+
+  div.bannerimage{
+    width: 100%;
+    padding: 0;
+  }
+
+  div.banner-menu{
+      width: 100%;
+      padding: 0;
+      text-align: center;
+  }
+
+  div.bannerright{
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 720px){
+
+  header .mobile-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 1.5rem;
+  }
+
+  header ul,
+  header .menu{
+    display: none;
+  }
 }
