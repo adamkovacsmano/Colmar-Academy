@@ -418,6 +418,41 @@ div.left{
   div.bannerright{
       width: 100%;
   }
+
+  .thesis-main{
+    align-items: center;
+    flex-direction: column;
+  }
+
+  div.information{
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  div.infoleft{
+    border: none;
+    padding: 0;
+    maring: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .inforight{
+    width: auto;
+  }
+
+  .thesisright{
+    width: auto;
+  }
+
+  div.thesisleft{
+    border: none;
+    padding: 0;
+    maring: 0;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 720px){
